@@ -1,3 +1,4 @@
+import Card from "@/components/Card";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FloatingNav";
@@ -14,6 +15,7 @@ export default function Home() {
           {name: "Contact", link: "/contact", icon: <FaAddressCard/>},
         ]} />
         <Hero />
+        <Card/>
         <Grid />
       </div>
     </main>
