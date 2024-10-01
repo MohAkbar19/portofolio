@@ -18,20 +18,23 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
-          <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>
-            Let&apos;s Create Something Amazing
+          <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80 bg-black-100 border border-slate-700 py-2 px-3 rounded-full'>
+            <span className='bg-green-200 text-[8px] p-[2px] rounded-full'>🟢</span> Available for new projects
           </h2>
 
           <TextGenerateEffect
             className="text-[40px] md:text-5xl lg:text-6xl text-center"
-            words="Empowering brands with innovative and user-centric web solutions."
+            words="Transforming ideas into engaging web solutions."
           />
 
-          <p className='text-center md:tracking-wider text-sm md:text-lg lg:text-2xl pt-4 mb-4'>
-            Hi, I am Nur arini, a Freelance Web Developer
+          <p className='text-center text-[15px] text-slate-200 pt-6 mb-4 max-w-xl'>
+            I’m passionate about building modern, responsive websites that provide seamless user experiences and drive results for businesses. Whether it’s a portfolio, e-commerce, or custom web application, I focus on clean design, optimized performance, and scalability.
           </p>
 
-          <ButtonMagic title="Discover More" />
+          <div className="flex gap-3 pt-8">
+          <ButtonMagic title="Explore My Work ↓" />
+          <ButtonMagic title="Get In Touch 🤝" />
+          </div>
         </div>
       </div>
     
