@@ -1,6 +1,6 @@
-import Card from "@/components/Card";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { FaAddressBook, FaAddressCard, FaHome, FaJava } from "react-icons/fa";
 
@@ -15,7 +15,7 @@ export default function Home() {
           {name: "Contact", link: "/contact", icon: <FaAddressCard/>},
         ]} />
         <Hero />
-        <Card/>
+        <Projects/>
         <Grid />
       </div>
     </main>
