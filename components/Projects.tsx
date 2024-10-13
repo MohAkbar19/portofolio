@@ -10,13 +10,13 @@ const Projects = () => {
         <h1 className='text-3xl font-bold '>A Journey Through My Code</h1>
         <p className='pt-3 text-[15px] text-slate-200'>Collection of web solutions that showcase my skills in design and development.</p>
       </div> 
-    <div className='mt-20 grid grid-cols-1 md:grid-cols-2 gap-5'>
-      {
-        projects.map(project => (
-          <ProjectCard key={project.id} title={project.title} description={project.description} img={project.img} linkGithub={project.linkGithub} linkWebsite={project.linkWebsite} tech={project.tech} />
-        ))
-      }
-    </div>  
+      <div className='mt-20 grid grid-cols-1 md:grid-cols-2 gap-5'>
+        {
+          projects.map(project => (
+            <ProjectCard key={project.id} title={project.title} description={project.description} img={project.img} linkGithub={project.linkGithub} linkWebsite={project.linkWebsite} tech={project.tech} />
+          ))
+        }
+      </div>  
     </div>
   )
 }
