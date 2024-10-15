@@ -15,8 +15,8 @@ export default function Home() {
           {name: "Contact", link: "/contact", icon: <FaAddressCard/>},
         ]} />
         <Hero />
-        <Projects/>
         <Grid />
+        <Projects/>
       </div>
     </main>
   );

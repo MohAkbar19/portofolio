@@ -23,11 +23,11 @@ const Hero = () => {
           </h2>
 
           <TextGenerateEffect
-            className="text-[40px] md:text-5xl lg:text-6xl text-center"
+            className="text-[50px] md:text-5xl lg:text-6xl text-center"
             words="Transforming ideas into engaging web solutions."
           />
 
-          <p className='text-center text-[15px] text-slate-200 pt-6 mb-4 max-w-xl'>
+          <p className='text-center text-[15px] text-slate-200 pt-6 mb-4 max-w-xl font-montserrat tracking-wider'>
             I’m passionate about building modern, responsive websites that provide seamless user experiences and drive results for businesses. Whether it’s a portfolio, e-commerce, or custom web application, I focus on clean design, optimized performance, and scalability.
           </p>
 

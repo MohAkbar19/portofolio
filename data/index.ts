@@ -4,7 +4,12 @@ export const gridItems = [
     id:1, 
     title: "Nur Arini", 
     headline: "Freelance Web Developer", 
-    description: ` Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugiat facere nihil sapiente dolore doloremque deleniti maxime? Temporibus, illo fugiat?`, className:'text-2xl', img:'./fotome.png'
+    description: `Hi! I’m Nur Arini, a passionate and dedicated Freelance Front-End Web Developer based in Bandung, Indonesia. I specialize in creating responsive, user-centric websites with a focus on clean, efficient code and modern design. With experience in HTML, CSS, JavaScript, React, and TypeScript, I have worked on various web development projects, ranging from small business websites to more complex applications.`, 
+    className:'text-2xl flex', 
+    img:'./fotome.png',
+    stylemain:'flex flex-col sm:flex-row justify-center gap-4 pl-5',
+    style1:'w-full sm:w-[25%] flex justify-center',
+    style2:'w-full sm:w-[75%]'
   },
   {id:2,title: "Title 1", description: "Description 1"},
   {id:3,title: "Title 1", description: "Description 1"},
@@ -13,6 +18,15 @@ export const gridItems = [
   {id:6,title: "Title 1", description: "Description 1"},
 ]
 
+export const techStack = [
+  "nextjs", 
+  "typescript", 
+  "tailwindcss", 
+  "react", 
+  "mongo", 
+  "express", 
+  "node",
+]
 
 export const projects = [
   { 
