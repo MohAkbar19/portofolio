@@ -151,6 +151,10 @@ const config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
+        infiniteScroll: {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -164,6 +168,7 @@ const config = {
         fifth: "moveInCircle 20s ease infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        infiniteScroll: 'infiniteScroll 15s linear infinite',
       },
     },
   },

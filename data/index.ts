@@ -1,3 +1,4 @@
+import { style } from "framer-motion/client"
 
 export const gridItems = [
   {
@@ -11,11 +12,21 @@ export const gridItems = [
     style1:'w-full sm:w-[25%] flex justify-center',
     style2:'w-full sm:w-[75%]'
   },
-  {id:2,title: "Title 1", description: "Description 1"},
-  {id:3,title: "Title 1", description: "Description 1"},
-  {id:4,title: "Title 1", description: "Description 1"},
-  {id:5,title: "Title 1", description: "Description 1"},
-  {id:6,title: "Title 1", description: "Description 1"},
+  {
+    id:2,
+    title: "My Tech Stack", 
+    description: "Currently using",
+    stylemain: "flex flex-col justify-center gap-4 pl-5",
+    style1 : "hidden",
+    style2 : "w-full px-6",
+  },
+  {
+    id:3,
+    title: "Connect with me on:", 
+    style1: "hidden",
+    style2: "w-full px-6",
+  },
+  {id:4,title: "Title 1", description: "Description 1"}
 ]
 
 export const techStack = [

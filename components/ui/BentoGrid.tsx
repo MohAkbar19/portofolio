@@ -1,4 +1,7 @@
+import { techStack } from "@/data";
 import { cn } from "@/lib/utils";
+import TechStackCarousel from "../TechStackCarousel";
+import SosmedCard from "../SosmedCard";
 
 export const BentoGrid = ({
   className,
@@ -29,8 +32,10 @@ export const BentoGridItem = ({
   headline,
   stylemain,
   style1,
-  style2
+  style2,
+  id
 }: {
+  id?: number;
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
@@ -68,9 +73,17 @@ export const BentoGridItem = ({
         <div>
           {headline}
         </div>
-        <div className=" mt-3 font-sans font-normal text-neutral-600 text-[15px] dark:text-neutral-300">
+        <div className="mb-10 font-sans font-normal text-neutral-600 text-[15px] dark:text-neutral-300">
           {description}
         </div>
+          {id === 2 && techStack && techStack.length > 0 && (
+            <TechStackCarousel />
+          )}
+          {
+            id === 3 && (
+              <SosmedCard/>
+            )
+          }
         </div>
       </div>
     </div>

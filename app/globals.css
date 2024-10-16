@@ -88,9 +88,25 @@
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
+  .card-sosmed {
+    @apply text-[76px] p-3 rounded-xl  text-slate-100 border border-slate-500 ;
+  }
 }
 
 body {
   font-family: 'Roboto', sans-serif;
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 17s linear infinite;
+  -webkit-animation: scroll 17s linear infinite;
+}

@@ -8,6 +8,7 @@ const Grid = () => {
       {gridItems.map((item, i) => (
         <BentoGridItem
           key={i}
+          id={item.id}
           title={item.title}
           description={item.description}
           className={i === 0 || i === 3 ? "md:col-span-2" : ""}
