@@ -4,7 +4,7 @@ import { MdOutlineMail } from 'react-icons/md'
 
 const SosmedCard = () => {
   return (
-    <div className='flex flex-wrap gap-5'>
+    <div className='flex flex-wrap gap-5 pt-5'>
       <FaLinkedin className='card-sosmed'/>
       <FaInstagram className='card-sosmed'/>
       <FaGithub className='card-sosmed'/>

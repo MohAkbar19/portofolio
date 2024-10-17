@@ -1,5 +1,3 @@
-import { style } from "framer-motion/client"
-
 export const gridItems = [
   {
     id:1, 
@@ -26,7 +24,14 @@ export const gridItems = [
     style1: "hidden",
     style2: "w-full px-6",
   },
-  {id:4,title: "Title 1", description: "Description 1"}
+  {
+    id: 4,
+    title: "My Approach: I create functional, visually appealing designs with clean, scalable code, ensuring efficient performance across platforms.", 
+    stylemain: 'flex flex-col gap-4 pl-5',
+    style1: 'hidden',
+    style2: 'w-full px-6',
+  }
+
 ]
 
 export const techStack = [

@@ -67,13 +67,13 @@ export const BentoGridItem = ({
         </div>
         
       <div className={`${style2}`}>
-        <div className="font-sans font-bold text-2xl text-neutral-600 dark:text-neutral-200 mt-2">
+        <div className="font-sans font-bold text-2xl text-neutral-600 dark:text-neutral-200 mt-2 ">
           {title}
         </div>
         <div>
           {headline}
         </div>
-        <div className="mb-10 font-sans font-normal text-neutral-600 text-[15px] dark:text-neutral-300">
+        <div className={`${description ? "block" : "hidden"} pt-5 mb-10 font-sans font-normal text-neutral-600 text-[15px] dark:text-neutral-300`}>
           {description}
         </div>
           {id === 2 && techStack && techStack.length > 0 && (
