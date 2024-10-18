@@ -1,6 +1,7 @@
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
+import Services from "@/components/Services";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { FaAddressBook, FaAddressCard, FaHome, FaJava } from "react-icons/fa";
 
@@ -16,6 +17,7 @@ export default function Home() {
         ]} />
         <Hero />
         <Grid />
+        <Services/>
         <Projects/>
       </div>
     </main>
