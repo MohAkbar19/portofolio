@@ -50,13 +50,19 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:border-white/[0.2] border border-transparent justify-between flex flex-col items-center px-3 pt-4",
+        "row-span-1 h-full rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:border-white/[0.2] border border-transparent justify-between flex flex-col items-center px-3 pt-4",
         className
       )}
       style={{
-        background: "rgb(4,7,29)",
+        background: id === 4 ? "none" : "rgb(4,7,29)",
         backgroundColor:
-          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+          id === 4
+            ? "none"
+            : "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+        backgroundImage:
+          id === 4 ? "url('/bg.jpg')" : "none",
+        backgroundSize: id === 4 ? "cover" : undefined,
+        backgroundPosition: id === 4 ? "center" : undefined,
       }}
     >
       {header}
@@ -67,7 +73,9 @@ export const BentoGridItem = ({
         </div>
         
       <div className={`${style2}`}>
-        <div className="font-sans font-bold text-2xl text-neutral-600 dark:text-neutral-200 mt-2 ">
+        <div className={`font-sans font-bold text-2xl text-neutral-600 dark:text-neutral-200 mt-2 ${
+          id === 4 ? "mt-32" : ""
+        }`}>
           {title}
         </div>
         <div>
