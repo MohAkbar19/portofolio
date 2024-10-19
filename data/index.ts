@@ -45,6 +45,28 @@ export const techStack = [
   "node",
 ]
 
+
+export const services = [
+    {
+      "id": 1,
+      "title": "Web Development",
+      "description": "Building responsive and user-friendly websites using the latest technologies like React.js and Next.js to deliver optimal user experiences across devices.",
+      "icon": "🌐"
+    },
+    {
+      "id": 2,
+      "title": "UI/UX Design",
+      "description": "Creating intuitive and visually appealing user interfaces to ensure easy and enjoyable interactions for users, balancing aesthetics and functionality.",
+      "icon": "🎨"
+    },
+    {
+      "id": 3,
+      "title": "Front-End Development",
+      "description": "Turning designs into efficient code using HTML, CSS, and JavaScript to create interactive and fast websites.",
+      "icon": "💻"
+    }
+  ]
+
 export const projects = [
   { 
     id:8,
