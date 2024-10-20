@@ -1,5 +1,4 @@
 import React from 'react'
-import { InfiniteMovingCards } from './ui/InfiniteMovingCards'
 import { services } from '@/data'
 import { Meteors } from './ui/Meteors'
 
@@ -13,7 +12,7 @@ const Services = () => {
     <div className="flex flex-col sm:flex-row justify-center items-center gap-5 mt-20">
       {
         services.map((service, index) => (
-        <div className=" w-full relative max-w-[350px] h-[250px] text-center" key={index}>
+        <div className=" w-full relative max-w-[350px] h-[230px] text-center" key={index}>
         <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
         <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
           <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
@@ -32,17 +31,17 @@ const Services = () => {
               />
             </svg>
           </div>
- 
-          <h1 className="font-bold text-xl text-white mb-4 relative z-50 text-center">
+
+          <h1 className="font-bold text-xl text-white mb-4 flex justify-center w-full items-center text-center">
             {service.title}
           </h1>
- 
+
           <p className="font-normal text-base text-slate-500 mb-4 relative z-50">
             {service.description}
           </p>
- 
+
           {/* Meaty part - Meteor effect */}
-          <Meteors number={20} />
+          <Meteors number={10} />
         </div>
       </div>
         ))

@@ -2,6 +2,7 @@ import React from 'react'
 import { CardBody, CardContainer, CardItem } from './ui/3d-card'
 import Image from 'next/image'
 import Link from 'next/link'
+import { MdArrowOutward } from 'react-icons/md'
 
 interface ProjectCardProps {
   title: string
@@ -15,17 +16,17 @@ interface ProjectCardProps {
 const ProjectCard = ({title, description, img,tech, linkGithub, linkWebsite} : ProjectCardProps ) => {
   return (
     <CardContainer className="inter-var m-0 p-0">
-      <CardBody className=" relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] bg-gradient-to-r from-[rgba(4,7,29,1)] to-[rgba(12,14,35,1)] dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+      <CardBody className=" relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] bg-gradient-to-r from-[rgba(4,7,29,1)] to-[rgba(12,14,35,1)] dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-[35rem] rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
-          className="text-xl font-bold text-neutral-600 dark:text-white"
+          className="text-xl font-extrabold tracking-wide text-neutral-600 dark:text-white mt-3 font-roboto"
         >
           {title}
         </CardItem>
         <CardItem
           as="p"
           translateZ="60"
-          className="text-neutral-500 text-justify text-sm  mt-2 dark:text-neutral-300"
+          className="text-neutral-500 text-start text-md tracking-wider  mt-2 dark:text-neutral-300"
         >
           {description}
         </CardItem>
@@ -34,41 +35,31 @@ const ProjectCard = ({title, description, img,tech, linkGithub, linkWebsite} : P
             src={img}
             height="1000"
             width="1000"
-            className="h-100 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            className="h-100 w-full object-cover rounded-3xl group-hover/card:shadow-xl"
             alt={title}
           />
         </CardItem>
-        <div>
+        <div className='flex flex-row justify-between items-center'>
           <CardItem
             translateZ={20}
-            className="px-4 py-2 text-xs font-normal flex flex-wrap gap-2 mt-4"
+            className="px-4 py-2 text-xs font-normal flex flex-wrap mt-4"
           >
             {
               tech.map((tech, idx) => (
-                <button key={idx} className='p-3 rounded-full border border-slate-600'>
-                  <Image src={`/${tech}.png`} alt={tech} width={25} height={25}/>
+                <button key={idx} className='p-3 rounded-full border border-slate-600 bg-slate-900 -ml-3'>
+                  <Image src={`/${tech}.png`} alt={tech} width={20} height={20}/>
                 </button>
               ))
             }
           </CardItem>
-        </div>
-        <div className="flex justify-between items-center mt-20">
           <CardItem
             translateZ={50}
             as={Link}
             href={linkGithub}
             target="__blank"
-            className="px-4 py-2 rounded-xl text-xs font-normal text-white border border-slate-500"
+            className="mt-3 flex items-center justify-center px-6 rounded-xl text-xs font-normal text-white border gap-1 border-slate-500 h-9"
           >
-            Source Code
-          </CardItem>
-          <CardItem
-            translateZ={20}
-            as={Link}
-            className="px-4 py-2 rounded-xl bg-slate-100 border border-slate-600 text-black text-xs font-bold"
-            href={linkWebsite}
-          >
-            Visit Live Site
+            Visit<MdArrowOutward className='text-xl'/>
           </CardItem>
         </div>
       </CardBody>

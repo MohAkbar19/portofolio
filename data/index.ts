@@ -47,31 +47,31 @@ export const techStack = [
 
 
 export const services = [
-    {
-      "id": 1,
-      "title": "Web Development",
-      "description": "Building responsive and user-friendly websites using the latest technologies like React.js and Next.js to deliver optimal user experiences across devices.",
-      "icon": "🌐"
-    },
-    {
-      "id": 2,
-      "title": "UI/UX Design",
-      "description": "Creating intuitive and visually appealing user interfaces to ensure easy and enjoyable interactions for users, balancing aesthetics and functionality.",
-      "icon": "🎨"
-    },
-    {
-      "id": 3,
-      "title": "Front-End Development",
-      "description": "Turning designs into efficient code using HTML, CSS, and JavaScript to create interactive and fast websites.",
-      "icon": "💻"
-    }
-  ]
+  {
+    "id": 2,
+    "title": "Web Design",
+    "description": "Creating visually appealing and functional websites focused on intuitive user experience across all devices.",
+    "icon": "🎨"
+  },
+  {
+    "id": 3,
+    "title": "Front-End Development",
+    "description": "Developing responsive and performant user interfaces using HTML, CSS, JavaScript, and modern frameworks.",
+    "icon": "💻"
+  },
+  {
+    "id": 4,
+    "title": "Web Development",
+    "description": "Building fast, secure, and scalable websites using modern technologies to meet your business goals.",
+  }
+];
+
 
 export const projects = [
   { 
     id:8,
     title: "Personal Finance - SaldaQ", 
-    description: "Klinik Smartphone is an interactive landing page designed to introduce smartphone repair services to potential customers.This landing page displays important information such as types of repair services,testimonials, and options to contact customer service.",
+    description: " SaldaQ is a simple app designed for students to manage income, expenses, and categories. It tracks transactions and visualizes balance efficiently",
     img: "/finance.png", 
     tech: ["react", "typescript", "mongo", "express","node","tailwindcss"],
     linkGithub: "https://github.com/nrrarnn/klinik-smartphone", 
@@ -80,7 +80,7 @@ export const projects = [
   { 
     id:7,
     title: "WellEat", 
-    description: "Klinik Smartphone is an interactive landing page designed to introduce smartphone repair services to potential customers.This landing page displays important information such as types of repair services,testimonials, and options to contact customer service.",
+    description: "Welleat is a platform focused on providing healthy recipes, helping users discover nutritious meals and make better food choices for a healthier lifestyle.",
     img: "/welleat.png", 
     tech: ["react", "typescript", "tailwindcss"],
     linkGithub: "https://github.com/nrrarnn/klinik-smartphone", 
@@ -89,7 +89,7 @@ export const projects = [
   { 
     id:1,
     title: "Klinik Smartphone", 
-    description: "Klinik Smartphone is an interactive landing page designed to introduce smartphone repair services to potential customers.This landing page displays important information such as types of repair services,testimonials, and options to contact customer service.",
+    description: "Klinik Smartphone is an interactive landing page showcasing smartphone repair services, featuring service types, customer testimonials, and easy contact options for customer support.",
     img: "/project-1.png", 
     tech: ["nextjs", "typescript", "tailwindcss"],
     linkGithub: "https://github.com/nrrarnn/klinik-smartphone", 
@@ -98,7 +98,7 @@ export const projects = [
   { 
     id:2,
     title: "Duriat Food", 
-    description: "Duriat Food is a landing page I created for a catering business. It offers a streamlined way for customers to explore diverse menu options. The user-friendly design allows visitors to effortlessly browse and select dishes tailored to their specific events.",
+    description: "Duriat Food is a catering business landing page offering a user-friendly way for customers to browse diverse menu options and select dishes for their events.",
     img: "/project-2.png", 
     tech: ["react", "typescript", "tailwindcss"],
     linkGithub: "https://github.com/nrrarnn/duriat-food", 
@@ -107,7 +107,7 @@ export const projects = [
   { 
     id:3,
     title: "Enigma Laundry", 
-    description: "Duriat Food is a landing page I created for a catering business. It offers a streamlined way for customers to explore diverse menu options. The user-friendly design allows visitors to effortlessly browse and select dishes tailored to their specific events.",
+    description: "Enigma Laundry is an admin dashboard designed for a laundry business. Admins can manage products and customers.",
     img: "/laundry.png", 
     tech: ["react", "js", "tailwindcss"],
     linkGithub: "https://github.com/nrrarnn/duriat-food", 
@@ -116,7 +116,7 @@ export const projects = [
   { 
     id:4,
     title: "Sarah Shop", 
-    description: "Duriat Food is a landing page I created for a catering business. It offers a streamlined way for customers to explore diverse menu options. The user-friendly design allows visitors to effortlessly browse and select dishes tailored to their specific events.",
+    description: "Sarah Shop is a landing page created for an online store, offering a sleek and user-friendly interface for customers to browse products.",
     img: "/shop.png", 
     tech: ["react", "js", "tailwindcss"],
     linkGithub: "https://github.com/nrrarnn/duriat-food", 
@@ -125,7 +125,7 @@ export const projects = [
   { 
     id:5,
     title: "Ryn Movie", 
-    description: "Duriat Food is a landing page I created for a catering business. It offers a streamlined way for customers to explore diverse menu options. The user-friendly design allows visitors to effortlessly browse and select dishes tailored to their specific events.",
+    description: "Ryn Movie is a platform featuring a landing page that showcases an extensive library of films and seamless navigation for an enhanced viewing experience.",
     img: "/movie.png", 
     tech: ["react", "js", "tailwindcss"],
     linkGithub: "https://github.com/nrrarnn/duriat-food", 
@@ -134,7 +134,7 @@ export const projects = [
   { 
     id:6,
     title: "Ryn Recipes", 
-    description: "Duriat Food is a landing page I created for a catering business. It offers a streamlined way for customers to explore diverse menu options. The user-friendly design allows visitors to effortlessly browse and select dishes tailored to their specific events.",
+    description: "Ryn Recipes is a platform with a landing page that offers a diverse collection of recipes, helping users explore and discover dishes for any occasion.",
     img: "/recipes.png", 
     tech: ["react", "js", "tailwindcss"],
     linkGithub: "https://github.com/nrrarnn/duriat-food", 
