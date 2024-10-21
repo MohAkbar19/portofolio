@@ -69,7 +69,7 @@ export const BentoGridItem = ({
       <div className={`group-hover/bento:translate-x-2 transition duration-200 ${stylemain}`}>
         {icon}
         <div className={`${style1}`}>
-          <img src={img} alt={title} className="object-cover" />
+          <img src={img} alt={title} className="object-cover w-[250px] h-[200px]" />
         </div>
         
       <div className={`${style2}`}>
@@ -81,7 +81,7 @@ export const BentoGridItem = ({
         <div>
           {headline}
         </div>
-        <div className={`${description ? "block" : "hidden"} pt-5 mb-10 font-sans font-normal text-neutral-600 text-[15px] dark:text-neutral-300`}>
+        <div className={`${description ? "block" : "hidden"} ${id === 1 ? 'mt-5':" *:"} mb-10 font-sans font-normal text-neutral-600 text-[15px] dark:text-neutral-300`}>
           {description}
         </div>
           {id === 2 && techStack && techStack.length > 0 && (

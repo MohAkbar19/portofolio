@@ -153,7 +153,7 @@ const config = {
         },
         infiniteScroll: {
           from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-100%)' },
+          to: { transform: 'translateX(-50%)' },
         },
         meteor: {
           "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
@@ -176,7 +176,7 @@ const config = {
         fifth: "moveInCircle 20s ease infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
-        infiniteScroll: 'infiniteScroll 15s linear infinite',
+        infiniteScroll: 'infiniteScroll 10s linear infinite',
         "meteor-effect": "meteor 5s linear infinite",
       },
     },

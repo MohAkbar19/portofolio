@@ -7,14 +7,14 @@ export const gridItems = [
     className:'text-2xl flex', 
     img:'./fotome.png',
     stylemain:'flex flex-col sm:flex-row justify-center gap-4 pl-5',
-    style1:'w-full sm:w-[25%] flex justify-center',
+    style1:'w-full sm:w-[25%] flex justify-center items-center -mt-6',
     style2:'w-full sm:w-[75%]'
   },
   {
     id:2,
     title: "My Tech Stack", 
     description: "Currently using",
-    stylemain: "flex flex-col justify-center gap-4 pl-5",
+    stylemain: "flex flex-col justify-center gap-4 pl-5 w-full",
     style1 : "hidden",
     style2 : "w-full px-6",
   },
@@ -43,6 +43,14 @@ export const techStack = [
   "mongo", 
   "express", 
   "node",
+  "laravel",
+  "php",
+  "python",
+  "mysql",
+  "postman",
+  "html",
+  "css",
+  "git"
 ]
 
 
