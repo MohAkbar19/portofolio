@@ -82,8 +82,7 @@ export const projects = [
     description: " SaldaQ is a simple app designed for students to manage income, expenses, and categories. It tracks transactions and visualizes balance efficiently",
     img: "/finance.png", 
     tech: ["react", "typescript", "mongo", "express","node","tailwindcss"],
-    linkGithub: "https://github.com/nrrarnn/klinik-smartphone", 
-    linkWebsite: "https://klinik-smartphone.netlify.app/"
+    linkGithub: "https://github.com/nrrarnn/personal-finance-frontend", 
   }, 
   { 
     id:7,
@@ -91,8 +90,7 @@ export const projects = [
     description: "Welleat is a platform focused on providing healthy recipes, helping users discover nutritious meals and make better food choices for a healthier lifestyle.",
     img: "/welleat.png", 
     tech: ["react", "typescript", "tailwindcss"],
-    linkGithub: "https://github.com/nrrarnn/klinik-smartphone", 
-    linkWebsite: "https://klinik-smartphone.netlify.app/"
+    linkGithub: "https://github.com/nrrarnn/welleat", 
   }, 
   { 
     id:1,
@@ -101,7 +99,6 @@ export const projects = [
     img: "/project-1.png", 
     tech: ["nextjs", "typescript", "tailwindcss"],
     linkGithub: "https://github.com/nrrarnn/klinik-smartphone", 
-    linkWebsite: "https://klinik-smartphone.netlify.app/"
   }, 
   { 
     id:2,
@@ -110,7 +107,6 @@ export const projects = [
     img: "/project-2.png", 
     tech: ["react", "typescript", "tailwindcss"],
     linkGithub: "https://github.com/nrrarnn/duriat-food", 
-    linkWebsite: "https://duriat-food.netlify.app/"
   }, 
   { 
     id:3,
@@ -118,8 +114,7 @@ export const projects = [
     description: "Enigma Laundry is an admin dashboard designed for a laundry business. Admins can manage products and customers.",
     img: "/laundry.png", 
     tech: ["react", "js", "tailwindcss"],
-    linkGithub: "https://github.com/nrrarnn/duriat-food", 
-    linkWebsite: "https://duriat-food.netlify.app/"
+    linkGithub: "https://github.com/nrrarnn/challenge-react-laundry", 
   }, 
   { 
     id:4,
@@ -127,8 +122,7 @@ export const projects = [
     description: "Sarah Shop is a landing page created for an online store, offering a sleek and user-friendly interface for customers to browse products.",
     img: "/shop.png", 
     tech: ["react", "js", "tailwindcss"],
-    linkGithub: "https://github.com/nrrarnn/duriat-food", 
-    linkWebsite: "https://duriat-food.netlify.app/"
+    linkGithub: "https://github.com/nrrarnn/olshop-react", 
   }, 
   { 
     id:5,
@@ -136,8 +130,7 @@ export const projects = [
     description: "Ryn Movie is a platform featuring a landing page that showcases an extensive library of films and seamless navigation for an enhanced viewing experience.",
     img: "/movie.png", 
     tech: ["react", "js", "tailwindcss"],
-    linkGithub: "https://github.com/nrrarnn/duriat-food", 
-    linkWebsite: "https://duriat-food.netlify.app/"
+    linkGithub: "https://github.com/nrrarnn/ryn-movies-react", 
   }, 
   { 
     id:6,
@@ -145,7 +138,6 @@ export const projects = [
     description: "Ryn Recipes is a platform with a landing page that offers a diverse collection of recipes, helping users explore and discover dishes for any occasion.",
     img: "/recipes.png", 
     tech: ["react", "js", "tailwindcss"],
-    linkGithub: "https://github.com/nrrarnn/duriat-food", 
-    linkWebsite: "https://duriat-food.netlify.app/"
+    linkGithub: "https://github.com/nrrarnn/ryn-recipes", 
   }, 
 ]

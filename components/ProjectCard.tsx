@@ -10,10 +10,9 @@ interface ProjectCardProps {
   img: string
   tech: Array<string>
   linkGithub: string
-  linkWebsite: string
 }
 
-const ProjectCard = ({title, description, img,tech, linkGithub, linkWebsite} : ProjectCardProps ) => {
+const ProjectCard = ({title, description, img,tech, linkGithub} : ProjectCardProps ) => {
   return (
     <CardContainer className="inter-var m-0 p-0">
       <CardBody className=" relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] bg-gradient-to-r from-[rgba(4,7,29,1)] to-[rgba(12,14,35,1)] dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-[35rem] rounded-xl p-6 border  ">

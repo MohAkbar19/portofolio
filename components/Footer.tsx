@@ -2,7 +2,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <footer className="py-6 flex justify-between px-6 sm:px-20">
+    <footer className="py-8 flex sm:flex-row flex-col gap-2 sm:justify-between items-center px-6 sm:px-20">
       <div>
         <h1 className="font-roboto tracking-wider">© 2024 Rynn. All rights reserved</h1>
       </div>

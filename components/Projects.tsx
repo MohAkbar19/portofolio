@@ -4,7 +4,7 @@ import { projects } from '@/data'
 
 const Projects = () => {
   return (
-    <div className='pt-32 pb-20 px-2 sm:px-20 text-center'>
+    <div className='pt-32 pb-20 px-2 sm:px-20 text-center' id='projects'>
       <div className='max-w-md mx-auto'>
         <h3 className='text-xs uppercase tracking-widest text-purple'>Featured Projects</h3>
         <h1 className='text-3xl font-bold '>A Journey Through My Code</h1>
