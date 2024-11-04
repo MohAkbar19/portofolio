@@ -32,8 +32,8 @@ const Hero = () => {
           </p>
 
           <div className="flex gap-3 pt-8">
-          <ButtonMagic title="Explore My Work ↓" />
-          <ButtonMagic title="Get In Touch 🤝" />
+          <ButtonMagic title="Explore My Work ↓" link='#projects' />
+          <ButtonMagic title="Get In Touch 🤝" link='#contact' />
           </div>
         </div>
       </div>
