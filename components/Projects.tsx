@@ -13,7 +13,7 @@ const Projects = () => {
       <div className='mt-20 grid grid-cols-1 md:grid-cols-2 gap-5'>
         {
           projects.map(project => (
-            <ProjectCard key={project.id} title={project.title} description={project.description} img={project.img} linkGithub={project.linkGithub} linkWebsite={project.linkWebsite} tech={project.tech} />
+            <ProjectCard key={project.id} title={project.title} description={project.description} img={project.img} linkGithub={project.linkGithub} tech={project.tech} />
           ))
         }
       </div>  
