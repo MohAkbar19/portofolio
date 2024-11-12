@@ -2,6 +2,7 @@ import { techStack } from "@/data";
 import { cn } from "@/lib/utils";
 import TechStackCarousel from "../TechStackCarousel";
 import SosmedCard from "../SosmedCard";
+import Image from "next/image";
 
 export const BentoGrid = ({
   className,
@@ -69,7 +70,7 @@ export const BentoGridItem = ({
       <div className={`group-hover/bento:translate-x-2 transition duration-200 ${stylemain}`}>
         {icon}
         <div className={`${style1}`}>
-          <img src={img} alt={title} className="object-cover w-[250px] h-[200px]" />
+          <Image src={img} alt={title} className="object-cover w-[250px] h-[200px]" />
         </div>
         
       <div className={`${style2}`}>
