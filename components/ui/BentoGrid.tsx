@@ -70,7 +70,7 @@ export const BentoGridItem = ({
       <div className={`group-hover/bento:translate-x-2 transition duration-200 ${stylemain}`}>
         {icon}
         <div className={`${style1}`}>
-          <Image src={`${img}`} alt={`${title}`} className="object-cover w-[250px] h-[200px]" />
+          <Image src={img as string} alt={`${title}`} className="object-cover" width={250} height={200} />
         </div>
         
       <div className={`${style2}`}>

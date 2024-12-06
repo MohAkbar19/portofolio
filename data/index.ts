@@ -5,7 +5,7 @@ export const gridItems = [
     headline: "Freelance Web Developer", 
     description: `Hi! I’m Nur Arini, a passionate and dedicated Freelance Front-End Web Developer based in Bandung, Indonesia. I specialize in creating responsive, user-centric websites with a focus on clean, efficient code and modern design. With experience in HTML, CSS, JavaScript, React, and TypeScript, I have worked on various web development projects, ranging from small business websites to more complex applications.`, 
     className:'text-2xl flex', 
-    img:'./fotome.png',
+    img:'/fotome.png',
     stylemain:'flex flex-col sm:flex-row justify-center gap-4 pl-5',
     style1:'w-full sm:w-[25%] flex justify-center items-center -mt-6',
     style2:'w-full sm:w-[75%]'
