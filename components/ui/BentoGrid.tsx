@@ -14,7 +14,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto ",
+        "relative grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto ",
         className
       )}
     >
@@ -43,7 +43,7 @@ export const BentoGridItem = ({
   header?: React.ReactNode;
   icon?: React.ReactNode;
   img?: string;
-  headline?: string ;
+  headline?: string;
   stylemain?: string;
   style1?: string;
   style2?: string;
@@ -72,25 +72,24 @@ export const BentoGridItem = ({
         <div className={`${style1}`}>
           <Image src={img as string} alt={`${title}`} className="object-cover" width={250} height={200} />
         </div>
-        
-      <div className={`${style2}`}>
-        <div className={`font-sans font-bold text-2xl text-neutral-600 dark:text-neutral-200 mt-2 ${
-          id === 4 ? "mt-32" : ""
-        }`}>
-          {title}
-        </div>
-        <div>
-          {headline}
-        </div>
-        <div className={`${description ? "block" : "hidden"} ${id === 1 ? 'mt-5':" *:"} mb-10 font-sans font-normal text-neutral-600 text-[15px] dark:text-neutral-300`}>
-          {description}
-        </div>
+
+        <div className={`${style2}`}>
+          <div className={`font-sans font-bold text-2xl text-neutral-600 dark:text-neutral-200 mt-2 ${id === 4 ? "mt-32" : ""
+            }`}>
+            {title}
+          </div>
+          <div>
+            {headline}
+          </div>
+          <div className={`${description ? "block" : "hidden"} ${id === 1 ? 'mt-5' : " *:"} mb-10 font-sans font-normal text-neutral-600 text-[15px] dark:text-neutral-300`}>
+            {description}
+          </div>
           {id === 2 && techStack && techStack.length > 0 && (
             <TechStackCarousel />
           )}
           {
             id === 3 && (
-              <SosmedCard/>
+              <SosmedCard />
             )
           }
         </div>

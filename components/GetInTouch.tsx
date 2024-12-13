@@ -10,14 +10,14 @@ type Inputs = {
 };
 
 const GetInTouch = () => {
-    const {
+  const {
     formState: { errors, isSubmitSuccessful, isSubmitting },
     handleSubmit,
     register,
     setError,
     reset,
   } = useForm<Inputs>({
-    defaultValues: { email: '', message: '' }, 
+    defaultValues: { email: '', message: '' },
   });
 
   const [showAlert, setShowAlert] = useState(false);
@@ -43,7 +43,7 @@ const GetInTouch = () => {
     }
   );
 
-  if(isSubmitSuccessful) {
+  if (isSubmitSuccessful) {
     setShowAlert(true)
     reset()
 
@@ -62,28 +62,28 @@ const GetInTouch = () => {
         {
           showAlert && (
             <div
-          className="mt-12 bg-green-300/25 border border-green-400 text-green-500 px-4 py-3 rounded-lg relative mb-6"
-          role="alert"
-        >
-          <span className="block sm:inline">
-            Your message has been sent successfully!
-          </span>
-          <button
-            onClick={() => setShowAlert(false)}
-            className="absolute top-0 bottom-0 right-0 px-4 py-3"
-          >
-            <svg
-              className="fill-current h-6 w-6 text-green-700"
-              role="button"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
+              className="mt-12 bg-green-300/25 border border-green-400 text-green-500 px-4 py-3 rounded-lg relative mb-6"
+              role="alert"
             >
-              <path
-                d="M14.348 5.652a1 1 0 011.415 0l.707.707a1 1 0 010 1.415L11.414 10l3.036 3.036a1 1 0 010 1.415l-.707.707a1 1 0 01-1.415 0L10 11.414l-3.036 3.036a1 1 0 01-1.415 0l-.707-.707a1 1 0 010-1.415L8.586 10 5.55 6.964a1 1 0 010-1.415l.707-.707a1 1 0 011.415 0L10 8.586l3.036-3.036z"
-              />
-            </svg>
-          </button>
-        </div>
+              <span className="block sm:inline">
+                Your message has been sent successfully!
+              </span>
+              <button
+                onClick={() => setShowAlert(false)}
+                className="absolute top-0 bottom-0 right-0 px-4 py-3"
+              >
+                <svg
+                  className="fill-current h-6 w-6 text-green-700"
+                  role="button"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M14.348 5.652a1 1 0 011.415 0l.707.707a1 1 0 010 1.415L11.414 10l3.036 3.036a1 1 0 010 1.415l-.707.707a1 1 0 01-1.415 0L10 11.414l-3.036 3.036a1 1 0 01-1.415 0l-.707-.707a1 1 0 010-1.415L8.586 10 5.55 6.964a1 1 0 010-1.415l.707-.707a1 1 0 011.415 0L10 8.586l3.036-3.036z"
+                  />
+                </svg>
+              </button>
+            </div>
           )
         }
       </div>

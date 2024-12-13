@@ -5,20 +5,20 @@ import { MdOutlineMail } from 'react-icons/md'
 const SosmedCard = () => {
   return (
     <div className='flex flex-wrap gap-5 pt-5'>
-      <a href="https://www.linkedin.com/in/nur-arini">
-        <FaLinkedin className='card-sosmed'/>
+      <a href="https://www.linkedin.com/in/mohamad-akbar-hernanda-861831247/">
+        <FaLinkedin className='card-sosmed' />
       </a>
-      <a href="https://www.instagram.com/ryn_code">
-        <FaInstagram className='card-sosmed'/>
+      <a href="https://www.instagram.com/barrhn_/">
+        <FaInstagram className='card-sosmed' />
       </a>
-      <a href="https://github.com/nrrarnn">
-        <FaGithub className='card-sosmed'/>
+      <a href="https://github.com/MohAkbar19">
+        <FaGithub className='card-sosmed' />
       </a>
-      <a href="https://www.tiktok.com/@knyzkx">
-        <FaTiktok className='card-sosmed'/>
+      <a href="#">
+        <FaTiktok className='card-sosmed' />
       </a>
-      <a href="mailto:nurarini0302@gmail.com">
-        <MdOutlineMail className='card-sosmed'/>
+      <a href="akbarxx@gmail.com">
+        <MdOutlineMail className='card-sosmed' />
       </a>
     </div>
   )

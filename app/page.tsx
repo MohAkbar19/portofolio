@@ -1,5 +1,5 @@
 import Footer from "@/components/Footer";
-import GetInTouch from "@/components/GetInTouch";
+// import GetInTouch from "@/components/GetInTouch";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
@@ -20,7 +20,7 @@ export default function Home() {
         <Grid />
         <Services/>
         <Projects/>
-        <GetInTouch />
+        {/* <GetInTouch /> */}
         <Footer/>
       </div>
     </main>

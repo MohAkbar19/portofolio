@@ -51,7 +51,7 @@ const ProjectCard = ({title, description, img,tech, linkGithub} : ProjectCardPro
               ))
             }
           </CardItem>
-          <CardItem
+          {/* <CardItem
             translateZ={50}
             as={Link}
             href={linkGithub}
@@ -59,7 +59,7 @@ const ProjectCard = ({title, description, img,tech, linkGithub} : ProjectCardPro
             className="mt-3 flex items-center justify-center px-6 rounded-xl text-xs font-normal text-white border gap-1 border-slate-500 h-9"
           >
             Visit<MdArrowOutward className='text-xl'/>
-          </CardItem>
+          </CardItem> */}
         </div>
       </CardBody>
     </CardContainer>
